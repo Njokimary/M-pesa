@@ -4,11 +4,13 @@ let mpesabalance = 627
 function safaricomMpesa(){
     let menu = prompt('1 Send money\n 2 Withdraw\n 3 Buy Airtime\n 4 Lipa na M-pesa')
     if (menu ==1 || "Send Money"){
-        let sendMoney = prompt( "Enter phone number")
+        let sendMoney = prompt( "Enter phone number");
         if (sendMoney == 1234567890){
-            alert('Your phone number is'+ sendMoney)
-        }else {
-            alert('sorry,Your option is not available')
+            let amount = prompt( "Enter amount"); Default  
+            let pin =prompt( "Enter pin number"); Default
+            alert("Money sent successfully!");
+        }else{
+            alert("sorry,Your option is not available")
         }
     }
     if (menu ==4 || menu == "Lipa na M-pesa"){
